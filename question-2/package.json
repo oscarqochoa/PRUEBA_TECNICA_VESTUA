@@ -1,0 +1,17 @@
+{
+  "name": "question-2",
+  "version": "1.0.0",
+  "description": "> En la carpeta [question-2](https://bitbucket.org/vestua-com/questions/src/main/question-2/) se ha exportado eventos de navegación de usuarios anonimizados de la plataforma Vestuá. Se le pide al equipo de Ingeniería que hagan un análisis sobre los datos de navegación. En particular se solicita:\r >\r > - Calcular la cantidad de visitas únicas por cada producto.\r > - Calcular la cantidad de clicks únicos por cada producto.\r > - Calular el CTR (*Clickthrough Rate*) de cada producto.\r > \r > El set de datos contiene la siguiente estructura:\r > \r > - `user`: id del usuario que ejecutó el evento.\r > - `entityId`: id de la entidad al que el usuario ejecutó el evento.\r > - `entityType`: tipo de entidad al que se ejecutó el evento.\r > - `eventType`: tipo de evento. Puede ser `impression` o `click`.\r > \r > Como miembro del equipo de ingeniería, te solicitan modificar el archivo [script.js](https://bitbucket.org/vestua-com/questions/src/main/question-2/script.js) para que pueda leer el set de datos y generar un archivo `output.csv` con las siguientes columnas:\r > \r > - `productId`: id del producto.\r > - `clicks`: cantidad de *clicks* únicos que tiene el producto\r > - `impressions`: cantidad de impresiones únicas que tiene el producto.\r > - `ctr`: métrica CTR del producto.",
+  "main": "script.js",
+  "scripts": {
+    "test": "node script.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "json-2-csv": "^3.17.0",
+    "json2csv": "^5.0.6"
+  }
+}

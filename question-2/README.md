@@ -23,3 +23,10 @@
 # Razonamiento
 
 _Escribir aquí los supuestos asumidos, reflexiones y explicaciones de la solución_
+
+Primero se lee el archivo se csv y se convierte la cadena de texto en un array con los 4 elementos
+
+luego cada elemento lo convierto en un objeto para tener un mejor manejo
+se eliminan el primer y el ultimo elemento del array ya que no me sirven
+se guardan todos los id de los productos en un set para que no se repitan
+luego se rellena un nuevo array con el calculo de clicks, permissions y ctr
